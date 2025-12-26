@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(49, 49, 49);
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    height: 700px;
+
+}
+.flexbox-item {
+    color: white;
+    margin: 0 auto;
+    border: 0px;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(49, 49, 49);
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+
+    transition: ease 0.75s 0s;
+}
+.flexbox-item:hover {
+    background-color: rgb(68, 68, 68);
+}
+.up-radius {
+    border-radius: 20px 20px 0 0;
+}
+.down-radius {
+    border-radius: 0 0 20px 20px;
+}
+.hidden {
+    display: none;
+}
+
+#flexbox2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width:400px;
+}
+#flexbox3 {
+    margin-top: 100px;
+}
+#flexbox {
+    flex-wrap: wrap-reverse;
+}

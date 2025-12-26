@@ -1,0 +1,226 @@
+/* Стили для счётчиков */
+#counters {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.counter {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.counter h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.counter span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.total {
+    background-color: rgb(77, 77, 77);
+}
+
+.untouched {
+    background-color: rgb(56, 56, 56); /* Серый */
+}
+
+.learning {
+    background-color: rgb(255, 204, 0); /* Жёлтый */
+}
+
+.learned {
+    background-color: rgb(0, 160, 0); /* Зелёный */
+}
+
+/* Стили для состояний алгоритмов */
+.alg-untouched {
+    background-color: rgb(56, 56, 56);
+}
+
+.alg-learning {
+    background-color: rgb(255, 204, 0);
+    color: black;
+}
+
+.alg-learned {
+    background-color: rgb(0, 160, 0);
+    color: white;
+}
+
+/* Стили для алгоритмов при наведении */
+.alg-untouched:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.alg-learning:hover {
+    background-color: rgb(255, 214, 51);
+}
+
+.alg-learned:hover {
+    background-color: rgb(0, 180, 0);
+}
+
+/* Остальные стили остаются без изменений */
+#grid {
+    grid-template-columns: 500px 150px 500px;
+    grid-template-rows: repeat(40, 150px);
+    border: solid 5px black;
+    margin: 20px auto;
+    background-color: rgb(56, 56, 56);
+    gap: 0;
+    width: max-content;
+}
+
+body {
+    background-color: rgb(77, 77, 77);
+    color: rgb(175, 175, 175);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 150px;
+}
+
+#grid > * {
+    background-color: rgb(56, 56, 56);
+    border: solid 5px;
+    box-sizing: border-box;
+    margin: 0 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.flexbox > * {
+    margin: 0 0;
+    padding: 5px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.flexbox > *:hover {
+    font-size: 30px;
+}
+.row-untouched {
+    background-color: rgb(56, 56, 56) !important;
+}
+
+.row-learning {
+    background-color: rgb(150, 120, 0) !important;
+}
+
+.row-learned {
+    background-color: rgb(0, 105, 0) !important;
+}
+
+.row-learning p,
+.row-learned p {
+    color: black !important;
+}
+
+.row-learned p {
+    color: white !important;
+}
+
+/* Улучшаем видимость текста на цветном фоне */
+.row-learning p,
+.row-learned p,
+.row-learning .flexbox p,
+.row-learned .flexbox p {
+    color: black !important;
+}
+
+.row-learned p,
+.row-learned .flexbox p {
+    color: white !important;
+}
+#MainPage {
+    margin-bottom: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    border-radius: 20px;
+    border: solid 5px green;
+    font-size: 30px;
+    color: white;
+    
+    transition: ease-in-out 0.25s;
+}
+#MainPage:hover {
+    width: 250px;
+    height: 125px;
+    margin-bottom: 75px;
+    background-color: rgb(0, 180, 0);
+    border: solid 5px rgb(0, 160, 0);
+}
+#MainPage:active {
+    width: 250px;
+    height: 125px;
+    margin-bottom: 75px;
+    background-color: rgb(112, 153, 0);
+    border: solid 5px rgb(123, 175, 0);
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 129, 119);
+    text-underline-position: under;
+}
+#algH1, #treiH1:hover {
+     cursor: pointer; 
+}
+.hidden {
+    display: none;
+}
+.dispGrid {
+    display: grid;
+}
+#trainerDiv {
+    margin-top: 50px;
+    display: hide;
+    grid-template-columns: 500px 300px 1000px;
+    grid-template-rows: repeat(3, 750px);
+    color: rgb(206, 206, 206);
+    gap: 0 0;
+}
+#solves {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(200, 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+#means {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+}
+#trainerDiv > * {
+    border: solid white 10px;
+}
+#trainerDiv > * > * {
+    margin-right: 30px 30px 30px 30px;
+}
+.green {
+    color: #00ff00;
+}
+
+.white {
+    color: #ffffff;
+}
