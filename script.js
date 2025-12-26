@@ -50,14 +50,14 @@ const buttonNames2A1 = [
 // "LS7",
 // "LS8",
 // "LS9",
-"TEG1- a",
-"TEG1+ a"
-// "TEG1- b",
-// "TEG1+ b",
-// "TEG1- c",
-// "TEG1+ c",
-// "TEG1- d",
-// "TEG1+ d",
+"Teg1- a",
+"Teg1+ a",
+"TEG1- b",
+"TEG1+ b",
+"TEG1- c",
+"TEG1+ c",
+"TEG1- d",
+"TEG1+ d",
 ];
 
 for (let i = 0; i < buttonNames2A1.length; i++)  {
