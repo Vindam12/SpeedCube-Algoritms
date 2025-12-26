@@ -52,7 +52,7 @@ const buttonNames2A1 = [
 // "Ls9",
 "Teg1- a",
 "Teg1+ a",
-"Teg- b",
+"Teg1- b",
 "Teg1+ b",
 "Teg1- c",
 "Teg1+ c",
