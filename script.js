@@ -41,6 +41,8 @@ const buttonNames2A1 = [
 "Teg2+",
 "Teg2-",
 "Leg1",
+"Feg1",
+"Reg1",
 // "Ls1",
 // "Ls2",
 // "Ls3",
@@ -57,7 +59,7 @@ const buttonNames2A1 = [
 "Teg1- c",
 "Teg1+ c",
 "Teg1- d",
-"Teg1+ d",
+"Teg1+ d"
 ];
 
 for (let i = 0; i < buttonNames2A1.length; i++)  {

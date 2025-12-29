@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SpeedCube Algoritms</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="Face-tip">
+            <img src="Картинки стороны/EG1 тип.png">
+            <p>REG1 собирает куб после сбора стороны с полоской справо
+                <br>
+                <br>
+                <span class="red">
+                !Не все алгортмы будут работать в этом методе, особенно с перехватами!
+                </span>
+            </p>
+        </div>
+        <a href="../index.html">
+            <button id="MainPage" onclick="mainPage()">Главная страница</button>
+        </a>
+        <div id="counters">
+            <div class="counter total">
+                <h3>Всего ситуаций</h3>
+                <span id="total-count">0</span>
+            </div>
+            <div class="counter untouched">
+                <h3>Не тронутые</h3>
+                <span id="untouched-count">0</span>
+            </div>
+            <div class counter learning>
+                <h3>Изучаемые</h3>
+                <span id="learning-count">0</span>
+            </div>
+            <div class="counter learned">
+                <h3>Выученные</h3>
+                <span id="learned-count">0</span>
+            </div>
+        </div>
+
+        <div id="grid">
+            
+        </div>
+        <script>
+        // Указываем метод перед загрузкой основного скрипта
+        window.CURRENT_METHOD = 'REG1';
+    </script>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

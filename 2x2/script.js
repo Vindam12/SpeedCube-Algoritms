@@ -154,7 +154,23 @@ const METHODS_CONFIG = {
         casesPerGroup: [6, 6, 6, 3, 4, 6, 6, 6],
         folder: "Картинки/TCLL+/",
         localStorageKey: 'teg1+dRowStates'
-    }
+    },
+    'REG1': {
+        totalCases: 40,
+        caseNames: ["Sune", "Anti-Sune", "Pi", "U", "L", "T", "H"],
+        caseImgPrefixes: ["S", "AS", "Pi", "U", "L", "T", "H"],
+        casesPerGroup: [6, 6, 6, 6, 6, 6, 4],
+        folder: "Картинки/CLL/",
+        localStorageKey: 'reg1RowStates'
+    },
+    'FEG1': {
+        totalCases: 40,
+        caseNames: ["Sune", "Anti-Sune", "Pi", "U", "L", "T", "H"],
+        caseImgPrefixes: ["S", "AS", "Pi", "U", "L", "T", "H"],
+        casesPerGroup: [6, 6, 6, 6, 6, 6, 4],
+        folder: "Картинки/CLL/",
+        localStorageKey: 'feg1RowStates'
+    },
 };
 
 // Получаем конфигурацию текущего метода
@@ -1154,8 +1170,7 @@ Gun,,,,,,
 ,y R' F2 R U R U R' U R',(U) R F R' U R F' U2 R2,y (U') F R U' R' U R' F' R U2 R',(U) F' R U2 R' F' R U2 R B2 R2,y (U') R2 U2 R' U R U2 R2 U F'`;
 
 // TEG1- d
- const TEG1_MINUS_D_CSV = `Hammer,,,,,,,
-,y' (U') R U R2 U' R U F2 R2,(U2) y2 x' R' F' R2 U R F' U' R U' R2,y2 (U2) R U' R U' R2 U2 F,F R U R' U' R U' R B2 R2,(U') y2 x' R' U' R U2 F' R U R' ,(U2) R2 F U F U2 R', 
+ const TEG1_MINUS_D_CSV = `Hammer,,,,,,,,y' (U') R U R2 U' R U F2 R2,(U2) y2 x' R' F' R2 U R F' U' R U' R2,y2 (U2) R U' R U' R2 U2 F,F R U R' U' R U' R B2 R2,(U') y2 x' R' U' R U2 F' R U R' ,(U2) R2 F U F U2 R', 
 ,,y' F' U' R U' R2 F2 R U2 R,,,(U') y' F' R' F R2 U' F R F' ,,
 ,,,,,,,
 ,,,,,,,
@@ -1199,6 +1214,109 @@ Pinwheel Poser,,,,,,,
 Gun,,,,,,,
 ,(U2) y' R U' R2 F U' R U R2,y' R' U' R' F R F' R' U F2 R2,F U R U2 R B2 R2,y2 x U F2 R F' R U R2 F' R,(U2) y' R U' R' U R' F2 R F2 R,(U) y' R U R' U R U2 F R' F' R2 B2 R2,
 ,,,z' y U' R U R' U R U R',,,,`;
+
+// FEG1
+const FEG1_CSV = `Sune,,,,,,,
+,(U) B' R U2 B2 L U' ,L U L' B2 U B L U L' , B L' B' L U L' B' L2 U L' ,B' U L U' L' U B L U L' ,(U') L U' L' U L U' L' U B L U' L',L' B L2 U' L' U L U' L' B ,
+, L U L' U B L U' L2 B' L ,(U') B L' B' L B L U' L' U L' B' L,(U) L' B L U2 L U' L2 B2 L B',(U) L U' L' B U' L' B L2 U L' B',(U) R2' B U' L U' L U' F2,,
+,y' (U) L' B L2 B' L2 U2 L, B L2 U' L2 B U' B2 U' L,,(U') B' L' B L2 U L' U' B L' B' L,(U') L U' L' U L U' L' U' L' B' L B,,
+,(U) B' L F2 U2 L B' (z'), B' L' B L U' L U L' U' B L' B' L,, B U' L U2 L' B2 L' B L,(U) L' B' L B U L' B' L U L' B' L,,
+,(U') L U' L2 B' L B U L' B L, L2 U' L2 B L2 U' L2 U' B2 U' L,,L U L' B' U L U2 L' U2 L U L', L U2 L' U L' B' L B L' B L,,
+,, L2 U L2 B' L2 U L2 U' B2 U' L,,,L U L' B L U' L' U L' B2 L,,
+,, x L U' L U x' L' U2 L U' L2 B L2,,,,,
+Anti-Sune,,,,,,, 
+,(U) F U' L2 B2 U' B ,(U') L U' L' B' U' B2 L U' L' ,B' L U L' U' L U L2 B' L ,L U' L' B' U' L U L' U' B ,(U) L U L' B' U' L U L' U' L U L', L U' L2 B L U' L' B L B' ,
+,(U') L' B L2 U L' B' U' L U' L' ,L' B L U' L U L' B' L' B L B', B U L U' L' U' L U2 L' B' L U L' B',(U) L' B L B' U L U' L2 B' L B,(U') B' L' B L U L U L' U' L U L',(U') B L' B2 L2 U L' U2 L' B' L,
+,L' B' L U' B' L' B L2 U L' ,L U' B2 L U2 L U' B/F,(U) L2 U B' L B' U L2 U L2,(U') B L U' R2' B' L U B' L U L', L U B' L U L2 U' L U L',,
+,(U) B' U2 B2 L U2 L' B,B L U' L' U L' B' L U B' L U L',,(U) L U L' B L U' L' U2 L' B L,L' B2 L U' L U L' B' L U' L',,
+,,,,,,,
+Pi,,,,,,,
+, B2 L U L' U2 L U L' U' B ,(U) L U' L2 B L2 U' L',(U) B L' B U' B2 L U L ,(U) L U' L' U L U' L' B L U' L',(U') B U' L U2 L' B' L U L' B',B L U' L' B L U2 L' U B' ,
+, L2 F2 L' U L' U' L U2 L U' L2,(U) L U L2 B' L2 U L' ,,(U) L' B L U' L' B L B' L' B L ,(U) L U L' U L U' R2' B' L B L' B' L,(U) L' B L B' L' B L2 U L' U' L U' L',
+,y2 (U') L U' L2 B L2 U' L F2 L2,(U) L' B L2 U' L2 B L,,(U) B' L U L' U' L U L' B' L U L',L U' L2 B L U L U' L' U' L' B L B' ,(U) L' B' L U' L' B L2 U L' B' L U L',
+,(U') B U' L' B L U' B2 L U L',(U) L' B' L2 U L2 B' L,,(U) B L' B' L U L' B' L B L' B' L,B L U' L' U' B' L U R2' B' L,(U) B L' B' L U L U L' U' L' B' L2 U L',
+,,,,, B' L' B L B' L' B2 L U' B, B' L' B L U B L' B' L2 U L',
+,,,,,,(U') B' U L' B2 L B L' B' L B,
+,,,,,,L B' L U' L' B L2 U2 L' U' L',
+,,,,,, L' U2 L U2 B2 U' B2 L U L,
+,,,,,,L U L' B' U' B L' B' L2 U L',
+U,,,,,,,
+,L U L' U L U' L2 B' L2 U L',(U) y L' U L' U' L U' L' U' B2 L2 ,(U') B' U2 L U2 L' U2 B , L' B L B' L' B L2 U' L' , L' B L B' U L U' L' B L U' L',(U) L' B L U' L' B L U' L U L' B',
+,L U' L2 B L2 U L' U' L U' L',B L2 F R2' B U B2 L2,(U) L U' L2 B2 L B' U L U L',L U' L' B L U' L2 B L ,(U) L U' L' U L U' L' U' B L U' L',(U) L' B L2 U' L' y' U L U L',
+,L U R2' B' L2 U' L' U' L U' L',L U L' B' U' L U L' U' B L' B' L,(U') B U2 L' B2 L U2 B',,(U) L U' L' U L U' L' U L' B' L B,(U') B' U L U2 L' B U2 B,
+,F' L2 B' L2 F' U' L2,(U) x U' L' U L U' B L U L U',(U') L U L' U B L U L' U L U' L2 B2 L,, B' U' B U L' B L2 U' L',L U' L' B U' L' B L B' L' B L,
+,L U L' U L U L2 B L2 U' L' , B' L' B L U L U L' U' B L' B' L,B L U2 L' B2 L U2 L' B',, L' B L U' L U L' B' U L U' L',(U) L' B L U' L' B L U B' L' B L,
+,, B' L' B L B' U B L U L',(U) L' B L2 U2 L' B U' L' B' L,,z' y (U') L U' L' U2 L U' L2 U', L U L' B' L U2 L' U2 B L' B' L,
+L,,,,,,,
+,L U' L' U L U' L2 B' L B ,(U') L' B L U' L' B L2 U L' B',L' U L2 U' L2 U' B L2 U' L' ,L' B L2 U L' B' L U2 L' ,(U') L U L' B' L U L' U' B L' B' L ,(U') L' U2 B L U2 L U' L2 B,
+,(U') L U L' B' L U2 L' U2 L U L' , L' B L B' L' B L U L U2 L', B' L' B L2 U L' U B' U L' B L B,L U2 L' B L U' L2 B' L, B' L' B L U' L U L' U' L U L',(U) B L U' L' U L' B' L U L' B' L,
+,(U') B L U' L' B' L U L' B' L U L',x U' L' U L U L' U' L U L' U' L ,,(U') L' B2 L B' L' B L2 U L',(U') R' U R y' L U2 L U' L2,(U) B' U2 B' L U2 L' U' B,
+,, B L' B' L U2 L U' R2' B' L2 U L',,(U') L U' L2 B' L B L' B2 L,L U' R2' B L U' L' B L2 B' U' L' U' L,(U') L' B' L B U' L' B' L U L' B' L ,
+,,B' L' B L B L' B' L B L' B' L,,,L U L' B' U L U L' U' L U L',L' B' L U B' L' B L U' L U L',
+,,L' B' L B L' B2 L U2 L' B' L ,,,y2 x  U L2 U L' U2 L U L',,
+,,(U) B2 L U' L' B2 L U' L' U' B,,,,,
+T,,,,,,,
+,(U') B L U' L2 B' L U L' B' L,(U') B' L' B L2 U L' U' L U L', L U' L2 B L U L U2 L',(U) L U' L' B' U' B L' B' L B,L' B' L2 U L' B' L U L' ,(U) L U' L' U2 B L U2 L' B ,
+,L U' L2 B L2 U L' U2 L' B L B' , L U' L' U2 L U2 L' B L U' L',L' B L2 U' L' U' L' B2 L , L' B L B' U L U' L' U' L' B' L B, L U L2 B' L B L' B' L,(U) L' B L U2 B' L' B2 L B',
+,L U L' U L U L2 B L U' L' B L B',(U) L U2 L' B L U' L' B' L U L',,L2 F2 U' L' U' L U' L' U L',L U2 R2' B L2 U' L' B' L U L',(U) L' B L2 U L' B' U2' L' B L B',
+,L' B L U2 L' B2 L B' L' B L ,(U) L U L' B' U2 L U L' U' L U L',,(U) L' U B L2 U' L2 U' B U' L,,(U') L' U' L U B2 U' B2 L U L,
+,,,,(U) L2 F2 U' L' U2 L' U2 L',, L U L' U B L U' L' B' L U L',
+,,,,L U' L' U' L' B2 U' B L B' U L,,(U') z2 y L U' L' U L' B L B' L,
+H,,,,,,,
+,L' B L2 U' L2 U' B U L ,B' U L U' L2 B2 L U' B,L' U' L' B2 U B' L B' ,L U L' B' L U L' U' L U L' ,,,
+,L' B L2 U' L' B L U L' B',(U/U') B' L' B L2 U2 L' B' U2 B,(U') L' B L B' U2 B L U2 L' B,(U') L' B L B' L' B L U' L' B L B',,,
+,L U' L2 B L B' L' B' L B,B U' L' B L2 U2 L' U B',, L' B' L B L' B' L U L' B' L,,,
+,(U/U') L U L' B L U' L' U' L U' L' B,,,,,,
+,(U/U') B' L' B L B L' B' L2 U L',,,,,,
+,(U/U') B L U' L' B' L U R2' B' L,,,,,,`
+
+// REG1
+const REG1_CSV = `Sune,,,,,,,
+, L' B L2 B' L2 U2 L,(U) L U L2 B' U B2 L2 B', B L' B' L2 U2 L U' L2,(U') L2 U' L2 B' L U2 L' U2 L' B, B2 L B' U L' B U' L2,(U) L U2 L U' L2 B L2 B',
+, L' B U2 R2' B L',L U' L' U L U2 L' U L2 U' L2,(U') L B L' B' L U' L' U L U' L' ,,L U2 L' U B L B' L2 U' L, R2' U' L U' B L' B' L2,
+, L U' L U' L' B L' B' L2 U' L2,(U) L2 U' L2 U L' U2 L U L' U' L,,,,,
+, L' B U2 L2 F U',,,,,,
+,,,,,,,
+Anti-Sune,,,,,,,
+, x' L U' L2 U L2 F2 L',(U') L2 U L2 U' L U2 L' U' L U L',(U) B L2 B' L2 U L' U2 L',(U) B' L U2 L U2 L' B L2 U L2,B' U2 L U L' U' L' B2 L2 B' L', L2 U L' U2 L2 B L B',
+,(U') L2 U L2 B L B' L U L' U L',(U') L U' L' U' B L B' L' B L B', B' U B L2 U2 L' U L2,(U) B L' B' L U2 L2 U' L2 B L2 B', L2 U L2 U2 L' B L B' L U' L',(U) L U L' U' L U L' B L B' L',
+, L' U2 L2 B L2 B' L,L' U L U' L' U2 L U' L2 U L2,(U) L2 B L B' U L' U L2,, B2 L U' L2 U' L2 U' L' B L',,
+, L B' L2 U2 B' L,,,,(U') B' L2 U B' L2 U' L U2 B',,
+,(U') L' B L2 B' L' U L' U L,,,,L' U2 L U' B' U' B L2 U L',,
+Pi,,,,,,, 
+, B L B' L' B L2 B' L' U2 L,(U) L U L' U' L U2 L U' L2, L B' U L' B2 U L B,(U) L2 U L' B L B' U L',(U') L U' L' B L B' L2 U2 L,(U') L U L' U L2 U' L2 B L2 B',
+, L' B' L2 B' L2 U2 B L,(U) L2 U L' U2 L' U L U' L', L B' U L2 U' L' B' U' L2 B' L',(U) L' B L' B' U L' U2 L' ,L2 U L' U L' U' L U2 L2 B L B' , L' U2 L2 B L' B' L U L',
+,(U) L B L' B' U L U' L2 B L B',(U') R2' U' L U2 L U' L' U L, B U' L' U' L' B L2 U' L2 U' B,(U') L B' U B U' L U2 L ,(U) L B L' B L U L' U2 B ,(U) L' U L B' U' B L2 U2 L',
+, L2 F2 L' U' L2 B L2 U' L',(U) L U' L' U2 L2 U' L U2 L ,(U) L U L' U' L F2 L' U L' B' L2 U L',L B L' B' L U' L2 B L B' , B L2 B' L2 U L2 U' L U' L' ,B' U' B L2 U L2 U2 L U2 L,
+,,(U') L' U L U2 L2 U L' U2 L' , L B' U2 B L U2 L' B L B',,,,
+,, L' U2 L' U L2 U2 L U L' ,,,,,
+,, L U2 L U' L2 U2 L' U' L ,,,,,
+U,,,,,,,
+,L' U L' U' L U' L' U' L2, L2 U L2 B' L2 B' L2 B L2 ,(U') L U L' B L2 B' L U' L' ,(U) L2 U L' U L' B L B' L U L2,(U) L2 U L' U2 L' B' U' B,(U') L2 U' L U2 L B L B',
+,(U) L2 U' L' U' L U' L' U L',(U) L B L' B' L U' L' B' U' B,L U' B L' B' L U L U2 L2,(U) B' U' B L2 U' L' U L U' L',L B L' B' U' L U' L' U L U' L' ,(U) B L' B' U L2 U L' U L',
+,L U' L U L' U L U L2 ,(U') L2 F2 L' U' L2 B L U L U2 L',L2 B L U L' U' L2 U2 L2 B,,(U) L U' L' U' B L B' U L U' L', B L B' U L2 U L' U2 L',
+,L U' L' U' L2 U' L' U L U' L',B2 L U L U' L2 B U' L B',L2 U2 L' U' L' B L B' U L',,,L' U B L2 B' L U2 L,
+,(U') L U2 L U2 L U L2,,(U) L' U' L F' R2' B U' B L,,, L2 B L2 B' U2 L2 U L2 U2 L',
+, L' U' L U2 L2 U L' U L',,,,,,
+L,,,,,,,
+,L2 U L' U' B L2 B' U L', L U' L' U' L2 U' L2 B L B',L' U L' U L2 U' L U2 L',(U) L' U L' U' L U L' B L2 B' L,B' U B L U2 L U' L2,(U') L U' L U' L2 U' B L B',
+, L2 B L B' L U L2 U L2,(U') L2 U L2 U B L B' L U L2,(U) L U2 L' U L2 U' L U' L,L' B U2 L2 B L U2 L U2 L2, L U' L U L' U2 B L B' L,L U' L' D' L U L2 B' L,
+,(U) L U2 B L' B' L U2 L U L2, B L' B' L2 U' L' U' L2 U' L2, L2 U L2 U B' L U' L' B2,,, L' U2 L' B L2 B' U' L,
+,(U') y2 B L U' L U L2 B' L U L' B',,L' U2 L U' L2 U L' U L',,,,
+,(U') L U' L' U L U2 L2 B L2 B' L',,,,,,
+T,,,,,,,
+,(U') B L' B' L2 U L2 U L U L',(U') L U' B L2 B' U L U' L2, L U2 L' U L' U' L U2 L U L' ,(U') B L B' L' B L2 B' U L' U L,L2 U' L' B L' B' L U' L U' L2,(U) L' B L2 B' L' U2 B L B',
+,L2 U L2 U L U L2 B L B',L2 U' L' U2 L' B L B' U2 L', L U2 L' U2 L U2 L U' L2, L2 U' B2 L U2 L' U2 L' B2, L U L' U' L U L2 B' U B,L2 U' L2 U' B L B' L' U' L,
+,(U) L2 U' L' B L' B' U' L2 U' L2,L2 U' L2 U' L' B L' B' L2, L2 U L' U2 L' U2 L U2 L', L B' R2' U2' B L U L' B L, L' U2 L' U' L U L' B L' B',L2 U' B U2 L U2 L U2 B L,
+,,L U' L' U' L' B L B' L2 U' L2, L' U L U2 L2 U L2 U' L U' L',(U) L' B L B' L B L' B' L U' L2, B2 L2 B L2 U L2 U' B2 L, L2 B L U L' B U' L U2 L2 B,
+,,(U') L' U L' U' L2 U L' B L' B',,,L' U2 L' U2 B L2 B' L2 U' L,,
+,,L U L' B2 L U' L2 U2 L' U' B,,,,,
+,,(U') y' B L U' L B L2 U' L' U L' B',,,,,
+H,,,,,,,
+,x L U2 L U' L' U B' L,L2 U L' U L U' L U L' U L2 ,(U) B' L' U' B2 L U' B L',L U' B L' B' L U' L2,,,
+,L B2 L B' L' B U' B,L2 U' L U' L' U L' U' L U' L2 ,B L' B' L U2 L' B' U2 B L',L U2 L U' B L B' L,,,
+,,L B L' B2 U2 B L U2 L',(U) B' L' U2 B2 L2 B' L' U' B2 L2, B' U' B L2 U' R2' B L B',,,
+,,,(U) L2 F2 L' U L' B' L U L' U' L U L',,,,`;
 
 // EG2
 // const EG2_CSV = ``;
@@ -1378,6 +1496,24 @@ function parseAlgCsv(csvString, methodName) {
         'Pinwheel Poser': ['PP1', 'PP2', 'PP3', 'PP4', 'PP5', 'PP6'],
         'Gun': ['G1', 'G2', 'G3', 'G4', 'G5', 'G6']
         },
+        'REG1': {
+            'Sune': ['S1', 'S2', 'S3', 'S4', 'S5', 'S6'],
+            'Anti-Sune': ['AS1', 'AS2', 'AS3', 'AS4', 'AS5', 'AS6'],
+            'Pi': ['Pi1', 'Pi2', 'Pi3', 'Pi4', 'Pi5', 'Pi6'],
+            'U': ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'],
+            'L': ['L1', 'L2', 'L3', 'L4', 'L5', 'L6'],
+            'T': ['T1', 'T2', 'T3', 'T4', 'T5', 'T6'],
+            'H': ['H1', 'H2', 'H3', 'H4']
+        },
+        'FEG1': {
+            'Sune': ['S1', 'S2', 'S3', 'S4', 'S5', 'S6'],
+            'Anti-Sune': ['AS1', 'AS2', 'AS3', 'AS4', 'AS5', 'AS6'],
+            'Pi': ['Pi1', 'Pi2', 'Pi3', 'Pi4', 'Pi5', 'Pi6'],
+            'U': ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'],
+            'L': ['L1', 'L2', 'L3', 'L4', 'L5', 'L6'],
+            'T': ['T1', 'T2', 'T3', 'T4', 'T5', 'T6'],
+            'H': ['H1', 'H2', 'H3', 'H4']
+        },
     };
     
     const groupCaseNames = groupStructures[methodName];
@@ -1486,6 +1622,12 @@ function getAlgorithmsForCase(caseKey) {
             case 'TEG1+ d':
                  csvData = TEG1_PLUS_D_CSV;
                  break;
+            case 'REG1':
+                csvData = REG1_CSV;
+                break;
+            case 'FEG1':
+                csvData = FEG1_CSV;
+                break;
             default:
                 console.error(`CSV для метода "${CURRENT_METHOD}" не найден`);
                 return [];
@@ -1639,6 +1781,7 @@ function addInfoText() {
     const infoText = document.createElement('div');
     infoText.innerHTML = `
         <div style="text-align: center; font-size: 14px; color: #aaa; margin: 10px auto; max-width: 800px;">
+            <p> При нажатии на случай, фон и фаза случая изменяется</p>
             <p style="font-size: 30px; margin: 5px 0;">
                 Метод: <strong>${CURRENT_METHOD}</strong> | Ситуаций: <strong>${TOTAL_CASES}</strong>
             </p>
