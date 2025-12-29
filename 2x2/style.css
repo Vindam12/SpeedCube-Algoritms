@@ -227,3 +227,18 @@ img {
 .red {
     color: rgb(168, 0, 0);
 }
+.footer {
+    text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.link {
+    text-decoration-color: rgb(0, 144, 180);
+    color: rgb(128, 128, 128);
+
+    transition: 0.3s;
+}
+.link:hover {
+    font-size: 75px;
+    color:rgb(0, 121, 95);
+}

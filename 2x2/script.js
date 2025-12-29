@@ -1970,4 +1970,16 @@ treiH1.addEventListener('click', function() {
     }
  });
 
+ 
+ const footer = document.createElement("div");
+ body[0].append(footer);
+ footer.innerHTML = `
+ <div class="footer">
+            <hr>
+            <h1>Site by Vindam</h1>
+            <br>
+            <h1>Algorithms are taken from <a class="link"href=https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0owTThtSG9Bd0o1RGNfU2R4ODFTenU3eERvQXxBQ3Jtc0tuRFF5clRYU3k4MUp4S3VET3hjaEptVkxjSGdLS1F3U0RMWGJ0cUhoWFlyWXFLbGtWeDZGTGVjX2Y4ZVRDLWU2dUd3c19ZVnliTDlPcGtDbXFrbVlaMXNpRHBiM0QxUzBpZEdxX3JyekE4WTVXLVpOaw&q=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1OFXakCV85Mp2zsQBXMxiMX9a506JeAcLnUXZr8FgXAY&v=q8ddewPrlhA>here</a> </h1>
+        </div>
+        `
+
 console.log("window.CURRENT_METHOD");
